@@ -1,0 +1,164 @@
+/* Mi código CSS */
+
+body {
+    padding-top: 80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+/*****************************************************************
+
+    HEADER
+
+/*****************************************************************/
+
+#header {
+    background-color: #222;
+    border-bottom: 4px solid #FF8F00;
+}
+
+#header-logo {
+    width: auto;
+    height: 20px;
+}
+
+/*****************************************************************
+
+    HOME
+
+/*****************************************************************/
+#btn-filtrar{
+    background-color: orangered;
+    color: white;
+}
+
+#estilosFormulario , #estilosMenu{
+    margin-top: 40px;
+}
+
+#valorUYU{
+    float: right;
+}
+
+#estilosFormulario{
+    background-color: rgb(201, 201, 201);
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+
+#estilosMenu{
+    padding-left: 20px; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#tituloVentas{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#home h1 span {
+    font-weight: 300;
+}
+
+#home .card h4 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.carousel-item{
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 4px solid  #FF8F00;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+    #home h1 {
+        font-size: 26px;
+    }
+    .carousel-item{
+        height: 250px;
+    }
+}
+
+#enNegro{
+    height: 30px;
+    margin-bottom: 10px;
+}
+#tituloSob{
+    margin-top: 20px;
+}
+
+h5 , h6 {
+    margin-top: 5px;
+    text-align: center;
+}
+
+#nuestroEq{
+    margin-top: 20px;
+}
+
+.badge{
+    position: absolute;
+    top: 5px;
+    left: 25px;
+}
+
+/*****************************************************************
+
+    FOOTER
+
+/*****************************************************************/
+
+#footer {
+    border-top: 4px solid #FF8F00;
+    background-color: #222;
+    margin-top: 40px;
+    color: #EEEEEE;
+    padding: 40px 0 40px 0;
+    font-size: 16px;
+}
+
+#footer-logo {
+    width: auto;
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+#footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+#footer ul li {
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+#footer ul li a,
+#footer ul li a:visited {
+    color: #EEEEEE;
+}
+
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#form-contact{
+    margin-top: 100px;
+    padding: 32px;
+    background-color: white;
+    border-radius: 5px;
+}

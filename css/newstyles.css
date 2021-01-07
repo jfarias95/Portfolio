@@ -1,0 +1,324 @@
+body{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font: 16px/1.6 Roboto,Helvetica,sans-serif;
+    background-image: url(../img/city.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+.navbar{
+    position: fixed;
+    background: rgb(0, 0, 0);
+    filter: opacity(0.9);
+}
+
+.navbar-nav{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nav-link{
+    padding-left: 20%;
+    display: flex;
+    align-items: center;
+    height: 3em;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+}
+
+.nav-link:hover{
+    filter: grayscale(0) opacity(1) ;
+}
+
+.nav-link{
+    min-width: 2em;
+    margin: 0 16px; 
+}
+
+.nav-item{
+    width: 100%;
+}
+
+.link-text{
+    text-align: center;
+    color: white;
+}
+#main-doc, #projects{
+    margin-left: 300px;
+    padding: 16px;
+}
+#courses{
+    padding: 0;
+    text-align: center;
+}
+#personal-info,#langtech,#courses,#contactme,#projects,#automotora, #buscador-peli{
+    font-size: 24px;
+    background: -webkit-linear-gradient(indigo,rgb(196, 195, 195));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#buscador-peli{
+    margin: auto;
+    padding-left: 90px;
+}
+#automotora{
+    padding-left: 150px;
+}
+
+#contactme{
+    margin-left: 70px;
+    margin-bottom: 35px;
+}
+  
+
+
+.column > p{
+    margin-bottom: 2.5em;
+    font-weight: bold;
+}
+
+div > p{
+    margin-bottom: 2.5em;
+    font-weight: bold;
+}
+
+.fa-css3-alt{
+    color: rgb(14, 89, 119);
+    font-size: 70px;
+    padding-right: 25px;
+}
+.fa-js-square{
+    color:yellow;
+    font-size: 70px;
+    padding-right: 25px;
+}
+.fa-bootstrap{
+    color: #563d7c;
+    font-size: 70px;
+    padding-right: 25px;
+}
+.fa-vuejs{
+    color:rgb(25, 105, 25);
+    font-size: 70px;
+    padding-right: 25px;
+}
+
+
+/*Small screens*/
+@media only screen and (max-width:800px){
+    .navbar{
+        top: 0;
+        width: 100vw;
+        height: 5em;
+    }
+
+    a.button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        border: 1px solid indigo;
+        border-radius: 5px;
+        text-decoration: none;
+        color: initial;
+        font-weight: bold;
+    }
+
+    h1,h2,#contacto{
+        display: none;
+    }
+
+    .navbar-nav{
+        flex-direction: row;
+    }
+    #sec-name-profile, #sec-img-profile{
+        display: none;
+    }
+    #main-doc{
+        margin: 0;
+    }
+    img{
+        display: none;
+    }
+    h3{
+        margin-top: 120px;
+        margin-left: 70px;
+        font-size: 50px;
+    }
+    h4{
+        margin-top: 80px;
+        padding-left: 70px;
+        font-size: 30px;
+    }
+    .row{
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+    
+    }
+    .column{
+        padding: 2em;
+        height: 100vh;
+        background-color: white;
+        color:black;
+
+
+    }
+    .fa-html5{
+        color: orangered;
+        font-size: 70px;
+        padding-left: 5px;
+        padding-right: 25px;
+    }
+    #project-images{
+        display: none !important;
+    }
+    #project-explanation{
+        height:fit-content;
+    }
+
+}
+
+
+/*Large screens*/
+@media only screen and (min-width:800px){
+    .navbar{
+        top: 0;
+        height: 100vh;
+        width: 300px;
+    }
+    #img-profile{
+    margin:10% 0 0 25%;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .nav-item > h2{
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 50px;
+    }
+
+    h3{
+        margin-left: 70px;
+        font-size: 50px;
+    }
+    h4{
+        padding-left: 70px;
+        font-size: 30px;
+    }
+
+    #contacto{
+        margin: auto;
+        display: inline-flex;
+
+    }
+    i{
+        text-align: center;
+        color: whitesmoke;
+        font-size: 30px;
+    }
+    a{
+        padding-right: 25px;
+    }
+    #home{
+        display: none;
+    }
+
+    .row {
+        margin-left: 300px;
+        display: flex;
+        height: 70vw;
+    
+    }
+
+    .column{
+        padding: 2em;
+        height: 100%;
+        background-color: white;
+        color:black;
+        flex: 50%;
+        border-left: 1px solid rgb(0, 0, 0);
+    }
+    .fa-html5{
+        color: orangered;
+        font-size: 70px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+#main-doc-contact > .column{
+    padding: 2em;
+    height: 100vh;
+    background-color: white;
+    color:black;
+    flex: 50%;
+    border-left: 1px solid rgb(0, 0, 0);
+}
+#main-doc-projects > .column{
+    padding: 2em;
+    height: 100vh;
+    background-color: white;
+    color:black;
+    flex: 50%;
+    border-left: 1px solid rgb(0, 0, 0);
+}
+.container {
+    position: relative;
+    width: 80%;
+  }
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+}
+  
+.container:hover .overlay {
+    opacity: 0.6;
+}
+.text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#btn-automotora,#btn-buscador{
+    display: none !important;
+}
+}
