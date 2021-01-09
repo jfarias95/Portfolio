@@ -70,7 +70,7 @@
 
 
         <div class="row">
-            <div class="col-3">
+            <div class="col-lg-3">
                 <div class="shadow-lg p-3 mb-5 bg-white rounded" id='estilosFormulario'>
                     <label for="anio">Año</label>
                     <div class="form-group">
@@ -103,14 +103,14 @@
 
             </div>
 
-            <div class="col-9">
+            <div class="col-lg-9">
                 <div>
                     <div id='estilosMenu' v-for="auto_actual in autos_actuales" class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <img v-bind:src='auto_actual.image' class="img-fluid" alt="">
                             <span v-if='auto_actual.status' class="badge badge-success">Nuevo</span>
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-8">
                             <div class="row">
                                 <div class="col-7">
                                     <h4>{{auto_actual.brand}} {{auto_actual.model}}</h4>

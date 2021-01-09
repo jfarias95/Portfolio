@@ -4,9 +4,7 @@ body{
     padding: 0;
     font: 16px/1.6 Roboto,Helvetica,sans-serif;
     background-image: url(../img/city.jpg);
-    background-size: auto;
     background-repeat: no-repeat;
-    background-position: center;
 }
 
 body::-webkit-scrollbar{
@@ -28,22 +26,13 @@ body::-webkit-scrollbar{
     height: 100%;
 }
 
-.nav-link{
-    padding-left: 20%;
-    display: flex;
-    align-items: center;
-    height: 3em;
-    text-decoration: none;
-    filter: grayscale(100%) opacity(0.7);
-}
-
 .nav-link:hover{
     filter: grayscale(0) opacity(1) ;
 }
 
 .nav-link{
     min-width: 2em;
-    margin: 0 16px; 
+    margin: 0 12px; 
 }
 
 .nav-item{
@@ -67,14 +56,6 @@ body::-webkit-scrollbar{
     background: -webkit-linear-gradient(indigo,rgb(196, 195, 195));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-#buscador-peli{
-    margin: auto;
-    padding-left: 90px;
-}
-#automotora{
-    padding-left: 150px;
 }
 
 #contactme{
@@ -117,7 +98,7 @@ div > p{
 
 
 /*Small screens*/
-@media only screen and (max-width:800px){
+@media only screen and (max-width:900px){
     .navbar{
         top: 0;
         width: 100vw;
@@ -140,6 +121,17 @@ div > p{
         display: none;
     }
 
+    #contactme{
+        margin: 100px 0 35px 70px;
+        padding-left: 0;
+    }
+    #contact-mail, #contact-linkedin, #contact-tel{
+        padding-right: 20px !important;
+    }
+    #col-contact{
+        height: 100vh;
+    }
+
     .navbar-nav{
         flex-direction: row;
     }
@@ -148,6 +140,9 @@ div > p{
     }
     #main-doc{
         margin: 0;
+    }
+    #automotora, #personal-info{
+        margin-top: 80px;
     }
     img{
         display: none;
@@ -158,8 +153,7 @@ div > p{
         font-size: 50px;
     }
     h4{
-        margin-top: 80px;
-        padding-left: 70px;
+        padding-left: 50px;
         font-size: 30px;
     }
     .row{
@@ -170,7 +164,6 @@ div > p{
     }
     .column{
         padding: 2em;
-        height: 100vh;
         background-color: white;
         color:black;
 
@@ -178,22 +171,50 @@ div > p{
     }
     .fa-html5{
         color: orangered;
-        font-size: 70px;
+        font-size: 80px;
         padding-left: 5px;
         padding-right: 25px;
     }
+
+    .fa-css3-alt{
+        color: rgb(14, 89, 119);
+        font-size: 80px;
+        padding-right: 25px;
+    }
+    .fa-js-square{
+        color:yellow;
+        font-size: 80px;
+        padding-right: 25px;
+    }
+    .fa-bootstrap{
+        color: #563d7c;
+        font-size: 80px;
+        padding-right: 25px;
+    }
+    .fa-vuejs{
+        color:rgb(25, 105, 25);
+        font-size: 80px;
+        padding-right: 25px;
+    }
+
     #project-images{
         display: none !important;
     }
     #project-explanation{
         height:fit-content;
     }
-
+    .nav-link{
+        display: flex;
+        align-items: center;
+        height: 3em;
+        text-decoration: none;
+        filter: grayscale(100%) opacity(0.7);
+    }
 }
 
 
 /*Large screens*/
-@media only screen and (min-width:800px){
+@media only screen and (min-width:900px){
     .navbar{
         top: 0;
         height: 100vh;
@@ -249,6 +270,11 @@ div > p{
     
     }
 
+    #icons{
+        margin: auto;
+        width: 90%;
+    }
+
     .column{
         padding: 2em;
         height: 100%;
@@ -259,8 +285,28 @@ div > p{
     }
     .fa-html5{
         color: orangered;
-        font-size: 70px;
-        padding-left: 25px;
+        font-size: 60px;
+        padding-right: 25px;
+    }
+
+    .fa-css3-alt{
+        color: rgb(14, 89, 119);
+        font-size: 60px;
+        padding-right: 25px;
+    }
+    .fa-js-square{
+        color:yellow;
+        font-size: 60px;
+        padding-right: 25px;
+    }
+    .fa-bootstrap{
+        color: #563d7c;
+        font-size: 60px;
+        padding-right: 25px;
+    }
+    .fa-vuejs{
+        color:rgb(25, 105, 25);
+        font-size: 60px;
         padding-right: 25px;
     }
     
@@ -320,5 +366,13 @@ div > p{
 
 #btn-automotora,#btn-buscador{
     display: none !important;
+}
+.nav-link{
+    padding-left: 20%;
+    display: flex;
+    align-items: center;
+    height: 3em;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
 }
 }
