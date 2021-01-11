@@ -386,6 +386,7 @@ div > p{
         font: 16px/1.6 Roboto,Helvetica,sans-serif;
         background-image: url(../img/city.jpg);
         background-repeat: no-repeat;
+        background-position: top;
     }
     
     .nav-item {
