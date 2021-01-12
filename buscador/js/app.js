@@ -9,6 +9,7 @@ $('#btn-busqueda').on("click", function () {
     $.ajax({
         method: "GET",
         url: 'http://private.omdbapi.com/?apikey=bef9c583&t='+ titulo,
+        /*http://www.omdbapi.com/?i=tt3896198&apikey=a226fd5*/
         dataType: "json",
         success: function (data) {
             console.log(data)
