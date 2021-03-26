@@ -270,7 +270,7 @@ div > p{
     .row {
         margin-left: 300px;
         display: flex;
-        height: 70vw;
+        height: 100vh;
     
     }
 
@@ -398,5 +398,11 @@ div > p{
     }
     #buscador-peli{
         margin-top:350px;
+    }
+      .row {
+        margin-left: 300px;
+        display: flex;
+        height: 100vh;
+    
     }
 }
