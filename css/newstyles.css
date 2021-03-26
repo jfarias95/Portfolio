@@ -290,23 +290,23 @@ div > p{
     .fa-html5{
         color: orangered;
         font-size: 60px;
-        padding-right: 25px;
+        padding-right: 18px;
     }
 
     .fa-css3-alt{
         color: rgb(14, 89, 119);
         font-size: 60px;
-        padding-right: 25px;
+        padding-right: 18px;
     }
     .fa-js-square{
         color:yellow;
         font-size: 60px;
-        padding-right: 25px;
+        padding-right: 18px;
     }
     .fa-bootstrap{
         color: #563d7c;
         font-size: 60px;
-        padding-right: 25px;
+        padding-right: 18px;
     }
     .fa-vuejs{
         color:rgb(25, 105, 25);
